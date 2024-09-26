@@ -1,19 +1,21 @@
 package lv.rvt;
 
 import java.util.Scanner;
-public class Story {
+public class VariousVariables {
     public static void main(String[] args) {
-            Scanner reader = new Scanner(System.in);
-    
-            System.out.println("What is the main character called?");
-            String first = reader.nextLine();
-            System.out.println("What is their job?");
-            String second = reader.nextLine();
-            System.out.println("Here is the story: ");
-            System.out.println("Once upon a time there was " + first + ", who was a " + second+ ".");
-            System.out.println("On the way to work, " + first + " reflected on life.");
-            
-    
-            System.out.println("Perhaps " + first + " will not be a " + second + " forever.");
+        String text = "None!";
+        int Chicken = 3;
+        double bacon = 5.5;
+        
+        System.out.println("Chicken: ");
+        System.out.println(Chicken);
+        System.out.println("Bacon (kg): ");
+        System.out.println(bacon);
+        System.out.println("Tractor: ");
+        System.out.println(text);
+        System.out.println("And finally, a summary: ");
+        System.out.println(Chicken);
+        System.out.println(bacon);
+        System.out.println(text);
     }
 }
