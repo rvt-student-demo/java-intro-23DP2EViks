@@ -1,7 +1,7 @@
 package lv.rvt;
 
 import java.util.Scanner;
-public class AverageOfTwoNumbers {
+public class AverageOfThreeNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -9,8 +9,10 @@ public class AverageOfTwoNumbers {
         int first = Integer.valueOf(scanner.nextLine());
         System.out.println("Give the second number:");
         int second = Integer.valueOf(scanner.nextLine());
+        System.out.println("Give the third number:");
+        int third = Integer.valueOf(scanner.nextLine());
         
-        double summa = (first + second) / 2;
+        double summa = (first + second + third) / 3;
         System.out.println("The average is " + summa);
     }
 }
