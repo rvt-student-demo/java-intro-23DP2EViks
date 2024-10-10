@@ -1,14 +1,14 @@
 package lv.rvt;
 
 import java.util.Scanner;
-public class SpeedingTicket {
+public class Ancient {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Give speed:");
+        System.out.println("Give a year:");
         int first = Integer.valueOf(scanner.nextLine());
-        if (first > 120) {
-            System.out.println("Speed Ticket!");
+        if (first < 2017) {
+            System.out.println("Ancient history!");
         }
     }
 }
