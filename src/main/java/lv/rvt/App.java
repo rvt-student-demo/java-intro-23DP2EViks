@@ -2,11 +2,11 @@ package lv.rvt;
 
 public class App {
     public static void main(String[] args) {
-        Agent bond = new Agent("James", "Bond");
-
-        System.out.println(bond);
-        
-        Agent iconic = new Agent("Iconic", "Bond");
-        System.out.println(iconic);
+        Statistics statistics = new Statistics();
+        statistics.addNumber(3);
+        statistics.addNumber(5);
+        statistics.addNumber(1);
+        statistics.addNumber(2);
+        System.out.println("Count: " + statistics.getCount());
     }
 }
