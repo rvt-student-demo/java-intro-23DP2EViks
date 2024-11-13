@@ -4,6 +4,8 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Statistics allNumbers = new Statistics();
+        Statistics evenNumber = new Statistics();
+        Statistics oddNumber = new Statistics();
         
         
         System.out.println("Enter numbers");
@@ -14,9 +16,16 @@ public class App {
             break;
         }
         allNumbers.addNumber(number);
+        if (number % 2 == 0) {
+            evenNumber.addNumber(number);
+        } else {
+            oddNumber.addNumber(number);
+        }
         
     }
     System.out.println("Sum: " + allNumbers.sum());
+    System.out.println("Sum of even numbers: " + evenNumber.sum());
+    System.out.println("Sum of odd numbers: " + oddNumber.sum());
     scanner.close();
     }
 }
