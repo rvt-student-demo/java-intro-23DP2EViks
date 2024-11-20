@@ -29,7 +29,7 @@ public class PaymentCard {
         }
     }
 
-    @Override
+  
     public String toString() {
         return "The card has a balance of " + this.balance + " euros";
     }
