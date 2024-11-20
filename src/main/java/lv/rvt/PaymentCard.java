@@ -20,7 +20,16 @@ public class PaymentCard {
         }
     }
 
+    public void addMoney(double amount) {
+        if (amount > 0) {
+            this.balance += amount;
+            if (this.balance > 150) {
+                this.balance = 150;
+            }
+        }
+    }
 
+    @Override
     public String toString() {
         return "The card has a balance of " + this.balance + " euros";
     }
